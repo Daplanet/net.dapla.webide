@@ -27,3 +27,7 @@ GIT_CURL_VERBOSE=1
 
 NO_PROXY="localhost,127.0.0.1,$DOMAINNAME"
 ```
+
+## Deployment
+
+![Screenshot](./Screen%20Shot%202019-06-24%20at%2012.28.11%20PM.png?raw=true)
