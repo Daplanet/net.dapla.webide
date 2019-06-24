@@ -1,0 +1,29 @@
+---
+version: '3.6'
+services:
+  ide:
+    image: webide/webide 
+    networks:
+      - public
+    environment:
+      USERNAME: denzuko
+      EMAIL: dspencer@computekindustries.com
+    deploy:
+      labels:
+        net.matrix.environment: development
+        traefik.enabled: 1
+        traefik.priority: 10
+        traefik.network: public
+        traefik.port: 8080
+        traefik.frontend.rule: 'Host: webide.${DOMAIN}'
+    volumes:
+      - data
+
+volumes:
+  data: {}
+
+networks:
+  public:
+    external: true
+    name: public
+...
