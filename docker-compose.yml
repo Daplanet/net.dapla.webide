@@ -7,7 +7,10 @@ services:
       - public
     environment:
       USERNAME: denzuko
-      EMAIL: dspencer@computekindustries.com
+      EMAIL: ${EMAIL}
+      TZ: UTC-6
+      DOMAINAME: ${DOMAINNAME}
+      HOSTNAME: ${HOSTNAME}
     deploy:
       labels:
         net.matrix.environment: development
@@ -15,7 +18,7 @@ services:
         traefik.priority: 10
         traefik.network: public
         traefik.port: 8080
-        traefik.frontend.rule: 'Host: webide.${DOMAIN}'
+        traefik.frontend.rule: 'Host: ${HOSTNAME}.${DOMAINNAME}'
     volumes:
       - data
 
