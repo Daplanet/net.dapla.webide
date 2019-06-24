@@ -1,5 +1,5 @@
 # net.dapla.webide
-Dockerized webide
+Dockerized ssh only webide
 
 ## Configuration
 
