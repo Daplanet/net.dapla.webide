@@ -1,5 +1,12 @@
+![banner](https://banner.dapla.net/?utm_campaign=community-buildpacks&utm_source=github.com/daplanet/xelatex-buildpack&utm_medium=markdown)
+
 # net.dapla.webide
 Dockerized git+ssh only webide
+
+## Project Status
+
+This project has reached its end of life. No further updates will be applied and the
+code repository may be removed at any time.
 
 ## Configuration
 
